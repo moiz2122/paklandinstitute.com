@@ -58,7 +58,7 @@ const MultiHeroCarousel = () => {
     },
     {
       id: 4,
-      badge: "Community Events",
+      badge: "Weekly Majlis Sessions",
       badgeIcon: true,
       title: "Journey To Purification",
       description:
