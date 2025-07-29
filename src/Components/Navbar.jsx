@@ -141,11 +141,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <a className="flex items-center space-x-2 group" href="/">
-            <img
-              src="./public/home/paklandinstitute_logo.svg"
-              width="48"
-              height="48"
-            />
+            <img src="/home/paklandinstitute_logo.svg" width="48" height="48" />
             <div className="hidden xl:block">
               <span className="text-lg font-bold bg-clip-text leading-tight">
                 Maryland Institute
