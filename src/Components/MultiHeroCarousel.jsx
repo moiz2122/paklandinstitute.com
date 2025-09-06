@@ -6,7 +6,7 @@ const MultiHeroCarousel = () => {
   const [currentHeroIndex, setCurrentHeroIndex] = useState(0);
   const [animationKey, setAnimationKey] = useState(0);
 
-  // Define your different hero sections data here
+  
   const heroSections = [
     {
       id: 1,
