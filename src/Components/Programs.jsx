@@ -25,11 +25,10 @@ function Programs() {
         <div className="mx-auto max-w-7xl">
           {/* Header */}
           <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-zinc-900 dark:text-zinc-100 mb-4 sm:mb-6">
-              Our{" "}
-              <span className="text-teal-600 dark:text-teal-500">Programs</span>
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-zinc-100 mb-4 sm:mb-6">
+              Our <span className="text-teal-500">Programs</span>
             </h2>
-            <p className="mt-4 max-w-2xl mx-auto text-lg sm:text-xl text-zinc-600 dark:text-zinc-400 leading-relaxed">
+            <p className="mt-4 max-w-2xl mx-auto text-lg sm:text-xl text-zinc-400 leading-relaxed">
               Discover our range of educational and community programs designed
               to nurture knowledge, faith, and character in Muslims of all ages.
             </p>
@@ -37,7 +36,7 @@ function Programs() {
 
           {/* Tab Buttons */}
           <div className="mb-12 flex justify-center">
-            <div className="bg-white dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 rounded-2xl shadow-lg shadow-zinc-300/40 dark:shadow-black/50 inline-flex relative">
+            <div className="bg-zinc-900 border border-zinc-800 rounded-2xl shadow-lg shadow-black/50 inline-flex relative">
               <button
                 onClick={() => {
                   togglehandler("educational");
@@ -71,7 +70,7 @@ function Programs() {
           {togglePrograms ? (
             <div className="max-w-sm sm:max-w-full mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
               {/* Quran Gateway */}
-              <div className="bg-white dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 rounded-3xl shadow-lg shadow-zinc-300/50 dark:shadow-black/60 overflow-hidden flex flex-col">
+              <div className="bg-zinc-900 border border-zinc-800 rounded-3xl shadow-lg shadow-black/60 overflow-hidden flex flex-col">
                 <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
                   <img
                     alt="QURAN GATEWAY"
@@ -91,16 +90,16 @@ function Programs() {
                   </div>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-xl sm:text-2xl font-bold text-zinc-900 dark:text-zinc-100 mb-3">
+                  <h3 className="text-xl sm:text-2xl font-bold text-zinc-100 mb-3">
                     QURAN GATEWAY
                   </h3>
-                  <p className="text-zinc-600 dark:text-zinc-400 mb-4 flex-grow">
+                  <p className="text-zinc-400 mb-4 flex-grow">
                     A part-time program focused on basic Tajweed and the
                     memorization of the last two Juz of the Quran, for children
                     aged 6 and above.
                   </p>
                   <a
-                    className="group inline-flex items-center justify-center w-full rounded-xl bg-teal-700 dark:bg-teal-800 px-6 py-3 text-base font-medium text-white"
+                    className="group inline-flex items-center justify-center w-full rounded-xl bg-teal-800 px-6 py-3 text-base font-medium text-white"
                     href="/quran-gateway"
                   >
                     Learn More
@@ -110,7 +109,7 @@ function Programs() {
               </div>
 
               {/* Quran Academy */}
-              <div className="bg-white dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 rounded-3xl shadow-lg shadow-zinc-300/50 dark:shadow-black/60 overflow-hidden flex flex-col">
+              <div className="bg-zinc-900 border border-zinc-800 rounded-3xl shadow-lg shadow-black/60 overflow-hidden flex flex-col">
                 <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
                   <img
                     alt="QURAN ACADEMY"
@@ -130,16 +129,16 @@ function Programs() {
                   </div>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-xl sm:text-2xl font-bold text-zinc-900 dark:text-zinc-100 mb-3">
+                  <h3 className="text-xl sm:text-2xl font-bold text-zinc-100 mb-3">
                     QURAN ACADEMY
                   </h3>
-                  <p className="text-zinc-600 dark:text-zinc-400 mb-4 flex-grow">
+                  <p className="text-zinc-400 mb-4 flex-grow">
                     A full-time program focused on advanced Tajweed and the
                     memorization of the entire Quran, for children aged 6 and
                     above.
                   </p>
                   <a
-                    className="group inline-flex items-center justify-center w-full rounded-xl bg-teal-700 dark:bg-teal-800 px-6 py-3 text-base font-medium text-white"
+                    className="group inline-flex items-center justify-center w-full rounded-xl bg-teal-800 px-6 py-3 text-base font-medium text-white"
                     href="/quran-academy"
                   >
                     Learn More
@@ -149,7 +148,7 @@ function Programs() {
               </div>
 
               {/* Arabic Literacy */}
-              <div className="bg-white dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 rounded-3xl shadow-lg shadow-zinc-300/50 dark:shadow-black/60 overflow-hidden flex flex-col">
+              <div className="bg-zinc-900 border border-zinc-800 rounded-3xl shadow-lg shadow-black/60 overflow-hidden flex flex-col">
                 <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
                   <img
                     alt="ARABIC LITERACY"
@@ -169,16 +168,16 @@ function Programs() {
                   </div>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-xl sm:text-2xl font-bold text-zinc-900 dark:text-zinc-100 mb-3">
+                  <h3 className="text-xl sm:text-2xl font-bold text-zinc-100 mb-3">
                     ARABIC LITERACY
                   </h3>
-                  <p className="text-zinc-600 dark:text-zinc-400 mb-4 flex-grow">
+                  <p className="text-zinc-400 mb-4 flex-grow">
                     A concise 3-month program that encompasses the fundamentals
                     of Arabic. Classes are conducted on Sundays and weekday
                     evenings.
                   </p>
                   <a
-                    className="group inline-flex items-center justify-center w-full rounded-xl bg-teal-700 dark:bg-teal-800 px-6 py-3 text-base font-medium text-white"
+                    className="group inline-flex items-center justify-center w-full rounded-xl bg-teal-800 px-6 py-3 text-base font-medium text-white"
                     href="/arabic-literacy"
                   >
                     Learn More
@@ -188,7 +187,7 @@ function Programs() {
               </div>
 
               {/* Arabic Mastery */}
-              <div className="bg-white dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 rounded-3xl shadow-lg shadow-zinc-300/50 dark:shadow-black/60 overflow-hidden flex flex-col">
+              <div className="bg-zinc-900 border border-zinc-800 rounded-3xl shadow-lg shadow-black/60 overflow-hidden flex flex-col">
                 <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
                   <img
                     alt="ARABIC MASTERY"
@@ -208,16 +207,16 @@ function Programs() {
                   </div>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-xl sm:text-2xl font-bold text-zinc-900 dark:text-zinc-100 mb-3">
+                  <h3 className="text-xl sm:text-2xl font-bold text-zinc-100 mb-3">
                     ARABIC MASTERY
                   </h3>
-                  <p className="text-zinc-600 dark:text-zinc-400 mb-4 flex-grow">
+                  <p className="text-zinc-400 mb-4 flex-grow">
                     A thorough 2-year program delving into advanced classical
                     Arabic, with classes held on both Sundays and weekday
                     evenings.
                   </p>
                   <a
-                    className="group inline-flex items-center justify-center w-full rounded-xl bg-teal-700 dark:bg-teal-800 px-6 py-3 text-base font-medium text-white"
+                    className="group inline-flex items-center justify-center w-full rounded-xl bg-teal-800 px-6 py-3 text-base font-medium text-white"
                     href="/arabic-mastery"
                   >
                     Learn More
@@ -227,7 +226,7 @@ function Programs() {
               </div>
 
               {/* Islamic Essentials */}
-              <div className="bg-white dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 rounded-3xl shadow-lg shadow-zinc-300/50 dark:shadow-black/60 overflow-hidden flex flex-col">
+              <div className="bg-zinc-900 border border-zinc-800 rounded-3xl shadow-lg shadow-black/60 overflow-hidden flex flex-col">
                 <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
                   <img
                     alt="ISLAMIC ESSENTIALS"
@@ -247,16 +246,16 @@ function Programs() {
                   </div>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-xl sm:text-2xl font-bold text-zinc-900 dark:text-zinc-100 mb-3">
+                  <h3 className="text-xl sm:text-2xl font-bold text-zinc-100 mb-3">
                     ISLAMIC ESSENTIALS
                   </h3>
-                  <p className="text-zinc-600 dark:text-zinc-400 mb-4 flex-grow">
+                  <p className="text-zinc-400 mb-4 flex-grow">
                     A comprehensive 2-year program that explores the
                     fundamentals of Islam, with classes held on both Sundays and
                     weekday evenings.
                   </p>
                   <a
-                    className="group inline-flex items-center justify-center w-full rounded-xl bg-teal-700 dark:bg-teal-800 px-6 py-3 text-base font-medium text-white"
+                    className="group inline-flex items-center justify-center w-full rounded-xl bg-teal-800 px-6 py-3 text-base font-medium text-white"
                     href="/islamic-essentials"
                   >
                     Learn More
@@ -266,7 +265,7 @@ function Programs() {
               </div>
 
               {/* Islamic Theology */}
-              <div className="bg-white dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 rounded-3xl shadow-lg shadow-zinc-300/50 dark:shadow-black/60 overflow-hidden flex flex-col">
+              <div className="bg-zinc-900  border-zinc-800 rounded-3xl shadow-black/60 overflow-hidden flex flex-col">
                 <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
                   <img
                     alt="ISLAMIC THEOLOGY"
@@ -286,16 +285,16 @@ function Programs() {
                   </div>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-xl sm:text-2xl font-bold text-zinc-900 dark:text-zinc-100 mb-3">
+                  <h3 className="text-xl sm:text-2xl font-bold text-zinc-100 mb-3">
                     ISLAMIC THEOLOGY
                   </h3>
-                  <p className="text-zinc-600 dark:text-zinc-400 mb-4 flex-grow">
+                  <p className="text-zinc-400 mb-4 flex-grow">
                     A traditional Alim curriculum equivalent to a Masters in
                     Islamic Theology, with classes held on both Sundays and
                     weekday evenings.
                   </p>
                   <a
-                    className="group inline-flex items-center justify-center w-full rounded-xl bg-teal-700 dark:bg-teal-800 px-6 py-3 text-base font-medium text-white"
+                    className="group inline-flex items-center justify-center w-full rounded-xl bg-teal-800 px-6 py-3 text-base font-medium text-white"
                     href="/islamic-theology"
                   >
                     Learn More
@@ -307,7 +306,7 @@ function Programs() {
           ) : (
             <div className="max-w-sm sm:max-w-full mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
               {/* Quran Gateway */}
-              <div className="bg-white dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 rounded-3xl shadow-lg shadow-zinc-300/50 dark:shadow-black/60 overflow-hidden flex flex-col">
+              <div className="bg-zinc-900 border border-zinc-800 rounded-3xl shadow-lg shadow-black/60 overflow-hidden flex flex-col">
                 <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
                   <img
                     alt="QURAN GATEWAY"
@@ -327,16 +326,16 @@ function Programs() {
                   </div>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-xl sm:text-2xl font-bold text-zinc-900 dark:text-zinc-100 mb-3">
+                  <h3 className="text-xl sm:text-2xl font-bold text-zinc-100 mb-3">
                     QURAN GATEWAY
                   </h3>
-                  <p className="text-zinc-600 dark:text-zinc-400 mb-4 flex-grow">
+                  <p className="text-zinc-400 mb-4 flex-grow">
                     A part-time program focused on basic Tajweed and the
                     memorization of the last two Juz of the Quran, for children
                     aged 6 and above.
                   </p>
                   <a
-                    className="group inline-flex items-center justify-center w-full rounded-xl bg-teal-700 dark:bg-teal-800 px-6 py-3 text-base font-medium text-white"
+                    className="group inline-flex items-center justify-center w-full rounded-xl bg-teal-800 px-6 py-3 text-base font-medium text-white"
                     href="/quran-gateway"
                   >
                     Learn More
@@ -346,7 +345,7 @@ function Programs() {
               </div>
 
               {/* Quran Academy */}
-              <div className="bg-white dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 rounded-3xl shadow-lg shadow-zinc-300/50 dark:shadow-black/60 overflow-hidden flex flex-col">
+              <div className="bg-zinc-900 border border-zinc-800 rounded-3xl shadow-lg shadow-black/60 overflow-hidden flex flex-col">
                 <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
                   <img
                     alt="QURAN ACADEMY"
@@ -366,16 +365,16 @@ function Programs() {
                   </div>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-xl sm:text-2xl font-bold text-zinc-900 dark:text-zinc-100 mb-3">
+                  <h3 className="text-xl sm:text-2xl font-bold text-zinc-100 mb-3">
                     QURAN ACADEMY
                   </h3>
-                  <p className="text-zinc-600 dark:text-zinc-400 mb-4 flex-grow">
+                  <p className="text-zinc-400 mb-4 flex-grow">
                     A full-time program focused on advanced Tajweed and the
                     memorization of the entire Quran, for children aged 6 and
                     above.
                   </p>
                   <a
-                    className="group inline-flex items-center justify-center w-full rounded-xl bg-teal-700 dark:bg-teal-800 px-6 py-3 text-base font-medium text-white"
+                    className="group inline-flex items-center justify-center w-full rounded-xl bg-teal-800 px-6 py-3 text-base font-medium text-white"
                     href="/quran-academy"
                   >
                     Learn More
@@ -385,7 +384,7 @@ function Programs() {
               </div>
 
               {/* Arabic Literacy */}
-              <div className="bg-white dark:bg-zinc-900 border border-zinc-100 dark:border-zinc-800 rounded-3xl shadow-lg shadow-zinc-300/50 dark:shadow-black/60 overflow-hidden flex flex-col">
+              <div className="bg-zinc-900 border border-zinc-800 rounded-3xl shadow-lg shadow-black/60 overflow-hidden flex flex-col">
                 <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
                   <img
                     alt="ARABIC LITERACY"
@@ -405,16 +404,16 @@ function Programs() {
                   </div>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-xl sm:text-2xl font-bold text-zinc-900 dark:text-zinc-100 mb-3">
+                  <h3 className="text-xl sm:text-2xl font-bold text-zinc-100 mb-3">
                     ARABIC LITERACY
                   </h3>
-                  <p className="text-zinc-600 dark:text-zinc-400 mb-4 flex-grow">
+                  <p className="text-zinc-400 mb-4 flex-grow">
                     A concise 3-month program that encompasses the fundamentals
                     of Arabic. Classes are conducted on Sundays and weekday
                     evenings.
                   </p>
                   <a
-                    className="group inline-flex items-center justify-center w-full rounded-xl bg-teal-700 dark:bg-teal-800 px-6 py-3 text-base font-medium text-white"
+                    className="group inline-flex items-center justify-center w-full rounded-xl bg-teal-800 px-6 py-3 text-base font-medium text-white"
                     href="/arabic-literacy"
                   >
                     Learn More

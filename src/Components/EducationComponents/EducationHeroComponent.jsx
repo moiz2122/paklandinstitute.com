@@ -1,0 +1,44 @@
+export default function EducationHeroComponent() {
+  return (
+    <section className="h-screen sm:h-[80vh] min-h-[600px] max-h-[900px] relative overflow-hidden">
+      {/* Background Image Container */}
+      <div className="absolute inset-0">
+        <img
+          alt="Quran Gateway"
+          src="/EducationSection/EducationHeroComponent_bg.jpg"
+          className="absolute h-full w-full object-cover"
+        />
+        {/* Gradient Overlays */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-black/80" />
+        <div className="absolute inset-0 bg-[#0A0A0A]/40" />
+      </div>
+
+      {/* Content Container */}
+      <div className="relative z-20 flex flex-col justify-center h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-left max-w-3xl">
+          {/* Heading */}
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-4 sm:mb-6 text-white tracking-tight leading-tight">
+            QURAN <span className="text-teal-500">GATEWAY</span>
+          </h1>
+
+          {/* Description */}
+          <p className="text-lg sm:text-xl md:text-2xl text-zinc-200 mb-8 sm:mb-10 md:mb-12 leading-normal">
+            Embark on a transformative journey through our comprehensive Quran
+            Gateway program. Master Tajweed, perfect your Makhraj, and memorize
+            the last two Juz of the Quran.
+          </p>
+
+          {/* Call-to-Action Buttons */}
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+            <button className="inline-block bg-teal-600 border-2 border-teal-600 text-white py-3 px-8 sm:py-4 rounded-2xl w-full sm:w-auto text-lg font-semibold hover:bg-teal-700 transition duration-300 transform shadow-lg">
+              Begin Your Journey
+            </button>
+            <button className="bg-black/40 border-2 border-white/20 text-white font-semibold py-3 px-8 sm:py-4 rounded-2xl w-full sm:w-auto shadow-lg transition duration-300 ease-in-out transform hover:bg-black/10 text-lg">
+              Explore Curriculum
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

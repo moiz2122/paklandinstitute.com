@@ -7,6 +7,7 @@ import Footer from "./Components/Footer";
 import OffersComponent from "./Components/OffersComponent";
 import Quote from "./Components/Quote";
 import Programs from "./Components/Programs";
+import QuranQateWay from "./Components/Educations/QuranQateWay";
 function App() {
   return (
     <div>
@@ -16,9 +17,13 @@ function App() {
       <Quote />
       <Programs />
       <Footer />
-  
     </div>
   );
 }
 
 export default App;
+
+
+{
+  /* <QuranQateWay /> */
+}

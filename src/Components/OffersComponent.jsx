@@ -64,26 +64,26 @@ const OffersComponent = () => {
 
           {/* Content Section */}
           <div className="w-full md:w-1/2">
-            <div className="bg-white dark:bg-zinc-900 rounded-3xl shadow-xl shadow-zinc-300/50 dark:shadow-black/40 overflow-hidden transition-all duration-300 hover:shadow-2xl p-7 md:p-8 border border-zinc-100 dark:border-zinc-800">
+            <div className="bg-zinc-900 rounded-3xl shadow-xl shadow-black/40 overflow-hidden transition-all duration-300 hover:shadow-2xl p-7 md:p-8 border border-zinc-800">
               {/* Header */}
               <div className="flex items-center mb-6 md:mb-8">
-                <div className="w-12 h-12 md:w-16 md:h-16 bg-teal-500/70 dark:bg-teal-600/70 rounded-full flex items-center justify-center transition-transform duration-300 hover:scale-110 mr-3 md:mr-4 flex-shrink-0">
+                <div className="w-12 h-12 md:w-16 md:h-16 bg-teal-600/70 rounded-full flex items-center justify-center transition-transform duration-300 hover:scale-110 mr-3 md:mr-4 flex-shrink-0">
                   <IconComponent className="w-6 h-6 md:w-7 md:h-7 text-white" />
                 </div>
-                <h2 className="text-2xl md:text-3xl font-bold text-zinc-800 dark:text-zinc-100 leading-tight">
+                <h2 className="text-2xl md:text-3xl font-bold text-zinc-100 leading-tight">
                   {service.title}
                 </h2>
               </div>
 
               {/* Description */}
-              <p className="text-base md:text-lg text-zinc-600 dark:text-zinc-400 mb-7 leading-relaxed">
+              <p className="text-base md:text-lg text-zinc-400 mb-7 leading-relaxed">
                 {service.description}
               </p>
 
               {/* Button */}
               <button
                 onClick={service.buttonAction}
-                className="group inline-flex items-center bg-gradient-to-r from-teal-500 to-teal-600 dark:from-teal-700 dark:to-teal-800 text-white font-semibold py-3 px-6 md:py-3 md:px-5 rounded-xl text-base md:text-lg transition-all duration-300 hover:shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+                className="group inline-flex items-center bg-gradient-to-r from-teal-700 to-teal-800 text-white font-semibold py-3 px-6 md:py-3 md:px-5 rounded-xl text-base md:text-lg transition-all duration-300 hover:shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
               >
                 {service.buttonText}
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
@@ -101,11 +101,11 @@ const OffersComponent = () => {
         <div className="max-w-7xl mx-auto">
           {/* Header Section */}
           <div className="text-center mb-0">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 text-zinc-900 dark:text-zinc-100">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 text-white">
               What We{" "}
-              <span className="text-teal-600 dark:text-teal-500">Offer</span>
+              <span className="text-teal-500">Offer</span>
             </h1>
-            <p className="text-xl md:text-2xl text-zinc-600 dark:text-zinc-400 max-w-sm md:max-w-xl mx-auto">
+            <p className="text-xl md:text-2xl text-zinc-400 max-w-sm md:max-w-xl mx-auto">
               Discover our range of services designed to support and enrich our
               community
             </p>
