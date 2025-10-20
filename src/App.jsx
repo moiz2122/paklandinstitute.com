@@ -20,14 +20,16 @@ function App() {
         <Route path="/contact" element={<Home />} />
         <Route path="/faculty" element={<Home />} />
         <Route path="/reviews" element={<Home />} />
+
         {/* Courses Pages Routes */}
-        <Route path="*" element={<NotFound />} />
         <Route path="/qurangateway" element={<QuranGateWay />} />
         <Route path="/quranacademy" element={<QuranAcademy />} />
         <Route path="/islamicessentials" element={<IslamicEssenrials />} />
         <Route path="/arabicliteracy" element={<Home />} />
         <Route path="/islamictheology" element={<Home />} />
         <Route path="/arabicmastery" element={<Home />} />
+
+        <Route path="*" element={<NotFound />} />
       </Routes>
 
       <Footer />
