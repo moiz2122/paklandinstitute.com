@@ -27,17 +27,17 @@ const Navbar = () => {
     // Add a small delay to prevent dropdown from closing when moving cursor to dropdown menu
     const timeout = setTimeout(() => {
       setActiveDropdown(null);
-    }, 150);
+    }, 30);
     setHoverTimeout(timeout);
   };
 
   const educationLinks = [
-    { href: "/quran-gateway", text: "Quran Gateway" },
-    { href: "/quran-academy", text: "Quran Academy" },
-    { href: "/arabic-literacy", text: "Arabic Literacy" },
-    { href: "/arabic-mastery", text: "Arabic Mastery" },
-    { href: "/islamic-essentials", text: "Islamic Essentials" },
-    { href: "/islamic-theology", text: "Islamic Theology" },
+    { href: "/qurangateway", text: "Quran Gateway" },
+    { href: "/quranacademy", text: "Quran Academy" },
+    { href: "/islamicessentials", text: "Islamic Essentials" },
+    { href: "/arabicmastery", text: "Arabic Mastery" },
+    { href: "/islamicessentials", text: "Arabic Literacy" },
+    { href: "/islamictheology", text: "Islamic Theology" },
   ];
 
   const communityLinks = [
@@ -66,7 +66,7 @@ const Navbar = () => {
       onMouseLeave={handleMouseLeave}
     >
       <button
-        className="flex items-center rounded-xl space-x-1 py-2 px-3 transition duration-300 hover:bg-zinc-900 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-opacity-50 group"
+        className="flex items-center rounded-xl space-x-1 py-2 px-3 transition duration-300 hover:bg-zinc-900 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-opacity-50"
         aria-expanded={isOpen}
         aria-haspopup="true"
       >
@@ -74,26 +74,30 @@ const Navbar = () => {
           {title}
           <span className="absolute left-0 bottom-0 w-full h-0.5 bg-teal-500 transform origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
         </span>
+
+        {/* Chevron rotation fixed */}
         <ChevronDown
-          className={`h-4 w-4 transition-transform duration-300 ${
+          className={`h-4 w-4 text-teal-500 transition-transform duration-300 ease-in-out ${
             isOpen ? "rotate-180" : "group-hover:rotate-180"
-          } text-teal-500`}
+          }`}
         />
       </button>
+
+      {/* Dropdown transition fix */}
       <div
-        className={`p-2 absolute left-0 mt-2 w-56 bg-zinc-900 rounded-2xl shadow-lg transition-all duration-300 transform ${
+        className={`absolute left-0 mt-2 w-56 bg-zinc-900 rounded-2xl shadow-lg p-2 transform transition-all duration-300 ease-in-out ${
           isOpen
             ? "opacity-100 visible translate-y-0"
-            : "opacity-0 invisible translate-y-1"
+            : "opacity-0 invisible -translate-y-2"
         }`}
       >
         {links.map((link, index) => (
           <a
             key={index}
-            className="flex items-center px-4 py-2 text-sm text-white hover:bg-teal-600 rounded-xl transition duration-300 group"
+            className="flex items-center px-4 py-2 text-sm text-white hover:bg-teal-600 rounded-xl transition duration-300"
             href={link.href}
           >
-            <span>{link.text}</span>
+            {link.text}
           </a>
         ))}
       </div>
@@ -144,10 +148,10 @@ const Navbar = () => {
             <img src="/home/paklandinstitute_logo.svg" width="48" height="48" />
             <div className="hidden xl:block">
               <span className="text-lg font-bold bg-clip-text leading-tight">
-                Maryland Institute
+                Quran Academy
               </span>
               <span className="block text-sm text-zinc-300 leading-tight font-medium">
-                of Development
+                & Islamic Studies
               </span>
             </div>
             <span className="text-xl font-bold xl:hidden bg-clip-text">

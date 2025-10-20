@@ -1,6 +1,6 @@
 export default function EducationHeroComponent() {
   return (
-    <section className="h-screen sm:h-[80vh] min-h-[600px] max-h-[900px] relative overflow-hidden">
+    <section className="h-screen">
       {/* Background Image Container */}
       <div className="absolute inset-0">
         <img

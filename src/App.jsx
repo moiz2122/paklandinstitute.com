@@ -1,29 +1,38 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import "./App.css";
-import HeroTafseer from "./Components/HeroTafseerSection";
-import MultiHeroCarousel from "./Components/MultiHeroCarousel";
 import Footer from "./Components/Footer";
-import OffersComponent from "./Components/OffersComponent";
-import Quote from "./Components/Quote";
-import Programs from "./Components/Programs";
-import QuranQateWay from "./Components/Educations/QuranQateWay";
+import Home from "./pages/ExplorePages/Home";
+import NotFound from "./pages/ExplorePages/PageNotFound";
+import QuranGateWay from "./pages/EducationPages/QuranGateway";
+import QuranAcademy from "./pages/EducationPages/QuranAcademy";
+import IslamicEssenrials from "./pages/EducationPages/IslamicEssentials";
 function App() {
   return (
     <div>
       <Navbar />
-      <MultiHeroCarousel />
-      <OffersComponent />
-      <Quote />
-      <Programs />
+
+      <Routes>
+        {/* Explore Pages Routes */}
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<Home />} />
+        <Route path="/contact" element={<Home />} />
+        <Route path="/faculty" element={<Home />} />
+        <Route path="/reviews" element={<Home />} />
+        {/* Courses Pages Routes */}
+        <Route path="*" element={<NotFound />} />
+        <Route path="/qurangateway" element={<QuranGateWay />} />
+        <Route path="/quranacademy" element={<QuranAcademy />} />
+        <Route path="/islamicessentials" element={<IslamicEssenrials />} />
+        <Route path="/arabicliteracy" element={<Home />} />
+        <Route path="/islamictheology" element={<Home />} />
+        <Route path="/arabicmastery" element={<Home />} />
+      </Routes>
+
       <Footer />
     </div>
   );
 }
 
 export default App;
-
-
-{
-  /* <QuranQateWay /> */
-}
