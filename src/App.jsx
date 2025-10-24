@@ -11,7 +11,7 @@ import IslamicEssenrials from "./pages/EducationPages/IslamicEssentials";
 function App() {
   return (
     <div>
-      <Navbar />
+      <Navbar />``
 
       <Routes>
         {/* Explore Pages Routes */}
