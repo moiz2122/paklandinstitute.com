@@ -12,7 +12,7 @@ const Footer = () => {
               <ul className="space-y-3">
                 <li>
                   <a
-                    href="/quran-gateway"
+                    href="#"
                     className="group leading-none inline-flex items-center transition-colors duration-300 hover:text-teal-600"
                   >
                     Quran Gateway

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ChevronDown, Menu, LogIn } from "lucide-react";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -32,31 +32,31 @@ const Navbar = () => {
   };
 
   const educationLinks = [
-    { href: "/qurangateway", text: "Quran Gateway" },
-    { href: "/quranacademy", text: "Quran Academy" },
-    { href: "/islamicessentials", text: "Islamic Essentials" },
-    { href: "/arabicmastery", text: "Arabic Mastery" },
-    { href: "/islamicessentials", text: "Arabic Literacy" },
-    { href: "/islamictheology", text: "Islamic Theology" },
+    { to: "/qurangateway", text: "Quran Gateway" },
+    { to: "/quranacademy", text: "Quran Academy" },
+    { to: "/islamicessentials", text: "Islamic Essentials" },
+    { to: "/arabicmastery", text: "Arabic Mastery" },
+    { to: "/islamicessentials", text: "Arabic Literacy" },
+    { to: "/islamictheology", text: "Islamic Theology" },
   ];
 
   const communityLinks = [
-    { href: "/family-tafseer", text: "Family Tafseer" },
-    { href: "/spiritual-discourses", text: "Spiritual Discourses" },
-    { href: "/womens-tafseer", text: "Womens Tafseer" },
+    { to: "/family-tafseer", text: "Family Tafseer" },
+    { to: "/spiritual-discourses", text: "Spiritual Discourses" },
+    { to: "/womens-tafseer", text: "Womens Tafseer" },
   ];
 
   const serviceLinks = [
-    { href: "/counseling-center", text: "Counseling Center" },
-    { href: "/zakat-aid", text: "Zakat Aid" },
-    { href: "/hajj-2025", text: "Hajj 2025" },
+    { to: "/counseling-center", text: "Counseling Center" },
+    { to: "/zakat-aid", text: "Zakat Aid" },
+    { to: "/hajj-2025", text: "Hajj 2025" },
   ];
 
   const exploreLinks = [
-    { href: "/about", text: "About" },
-    { href: "/faculty", text: "Faculty" },
-    { href: "/reviews", text: "Reviews" },
-    { href: "/contact", text: "Contact" },
+    { to: "/about", text: "About" },
+    { to: "/faculty", text: "Faculty" },
+    { to: "/reviews", text: "Reviews" },
+    { to: "/contact", text: "Contact" },
   ];
 
   const DropdownMenu = ({ title, links, isOpen, dropdownKey }) => (
@@ -92,13 +92,13 @@ const Navbar = () => {
         }`}
       >
         {links.map((link, index) => (
-          <a
+          <Link
             key={index}
             className="flex items-center px-4 py-2 text-sm text-white hover:bg-teal-600 rounded-xl transition duration-300"
-            href={link.href}
+            to={link.to}
           >
             {link.text}
-          </a>
+          </Link>
         ))}
       </div>
     </div>
@@ -126,13 +126,13 @@ const Navbar = () => {
       >
         <div className="p-3 rounded-xl mt-1 space-y-1 mb-2">
           {links.map((link, index) => (
-            <a
+            <Link
               key={index}
               className="flex items-center py-2 px-8 hover:bg-teal-600 rounded-xl transition duration-300"
-              href={link.href}
+              to={link.href}
             >
               <span>{link.text}</span>
-            </a>
+            </Link>
           ))}
         </div>
       </div>
@@ -144,7 +144,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <a className="flex items-center space-x-2 group" href="/">
+          <Link className="flex items-center space-x-2 group" to="/">
             <img src="/home/paklandinstitute_logo.svg" width="48" height="48" />
             <div className="hidden xl:block">
               <span className="text-lg font-bold bg-clip-text leading-tight">
@@ -157,7 +157,7 @@ const Navbar = () => {
             <span className="text-xl font-bold xl:hidden bg-clip-text">
               MID
             </span>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-1">
@@ -189,12 +189,12 @@ const Navbar = () => {
 
           {/* Desktop Action Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
-            <a
+            <Link
               className="bg-teal-600 text-sm text-white px-6 py-2 rounded-xl font-bold hover:bg-teal-700 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-opacity-50 shadow-lg hover:shadow-xl"
-              href="/donation"
+              to="/donation"
             >
               DONATE
-            </a>
+            </Link>
             <button className="group flex items-center bg-white text-teal-700 text-sm px-6 py-2 rounded-xl transition duration-300 font-bold transform focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 shadow-lg hover:shadow-xl">
               LOGIN
               <LogIn className="inline-block h-4 w-4 ml-1 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
@@ -246,12 +246,12 @@ const Navbar = () => {
           />
         </div>
         <div className="p-4 space-y-4">
-          <a
+          <Link
             className="block w-full text-center text-sm bg-gradient-to-r from-teal-600 to-teal-700 text-white px-6 py-4 rounded-2xl hover:from-teal-600 hover:to-teal-700 transition duration-300 font-bold transform focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-opacity-50 shadow-lg hover:shadow-xl"
-            href="/donation"
+            to="/donation"
           >
             DONATE
-          </a>
+          </Link>
           <button className="flex items-center justify-center w-full bg-white text-teal-700 text-sm px-6 py-4 rounded-2xl transition duration-300 font-bold transform focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 shadow-lg hover:shadow-xl hover:bg-zinc-100">
             LOGIN
             <LogIn className="inline-block h-4 w-4 ml-1" />

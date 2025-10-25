@@ -100,7 +100,7 @@ function Programs() {
                   </p>
                   <a
                     className="group inline-flex items-center justify-center w-full rounded-xl bg-teal-800 px-6 py-3 text-base font-medium text-white"
-                    href="/quran-gateway"
+                    
                   >
                     Learn More
                     <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
@@ -336,7 +336,7 @@ function Programs() {
                   </p>
                   <a
                     className="group inline-flex items-center justify-center w-full rounded-xl bg-teal-800 px-6 py-3 text-base font-medium text-white"
-                    href="/quran-gateway"
+            
                   >
                     Learn More
                     <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
