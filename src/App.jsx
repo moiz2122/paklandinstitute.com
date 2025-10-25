@@ -5,7 +5,7 @@ import "./App.css";
 import Footer from "./Components/Footer";
 import Home from "./pages/ExplorePages/Home";
 import NotFound from "./pages/ExplorePages/PageNotFound";
-import QuranGateWay from "./pages/EducationPages/QuranGateway";
+import QuranGateWay from "./pages/EducationPages/QuranGateWay";
 import QuranAcademy from "./pages/EducationPages/QuranAcademy";
 import IslamicEssenrials from "./pages/EducationPages/IslamicEssentials";
 function App() {
