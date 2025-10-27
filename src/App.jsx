@@ -3,11 +3,19 @@ import { Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import "./App.css";
 import Footer from "./Components/Footer";
+
 import Home from "./pages/ExplorePages/Home";
 import NotFound from "./pages/ExplorePages/PageNotFound";
 import QuranGateWay from "./pages/EducationPages/QuranGateWay";
 import QuranAcademy from "./pages/EducationPages/QuranAcademy";
 import IslamicEssenrials from "./pages/EducationPages/IslamicEssentials";
+import ArabicMastery from "./pages/EducationPages/ArabicMastery";
+
+import About from "./pages/ExplorePages/About";
+import Contact from "./pages/ExplorePages/Contact";
+import Faculty from "./pages/ExplorePages/Faculty";
+import Reviews from "./pages/ExplorePages/Reviews";
+
 function App() {
   return (
     <div>
@@ -16,10 +24,10 @@ function App() {
       <Routes>
         {/* Explore Pages Routes */}
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<Home />} />
-        <Route path="/contact" element={<Home />} />
-        <Route path="/faculty" element={<Home />} />
-        <Route path="/reviews" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/faculty" element={<Faculty />} />
+        <Route path="/reviews" element={<Reviews />} />
 
         {/* Courses Pages Routes */}
         <Route path="/qurangateway" element={<QuranGateWay />} />
@@ -27,7 +35,7 @@ function App() {
         <Route path="/islamicessentials" element={<IslamicEssenrials />} />
         <Route path="/arabicliteracy" element={<Home />} />
         <Route path="/islamictheology" element={<Home />} />
-        <Route path="/arabicmastery" element={<Home />} />
+        <Route path="/arabicmastery" element={<ArabicMastery />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>

@@ -8,7 +8,7 @@ import EducationCourseCurriculm from "../../Components/EducationComponents/Educa
 function IslamicEssentials() {
   return (
     <>
-      <EducationHeroComponent />
+      <EducationHeroComponent imgeUrl="/Programs/IslamicEssentials.jpg" />
       <EducationAbout />
       <EducationClassSchedule />
       <EducationPricing />

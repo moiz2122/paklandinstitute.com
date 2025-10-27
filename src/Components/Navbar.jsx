@@ -36,8 +36,7 @@ const Navbar = () => {
     { to: "/quranacademy", text: "Quran Academy" },
     { to: "/islamicessentials", text: "Islamic Essentials" },
     { to: "/arabicmastery", text: "Arabic Mastery" },
-    { to: "/islamicessentials", text: "Arabic Literacy" },
-    { to: "/islamictheology", text: "Islamic Theology" },
+
   ];
 
   const communityLinks = [

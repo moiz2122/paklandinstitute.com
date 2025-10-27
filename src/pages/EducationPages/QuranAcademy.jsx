@@ -4,10 +4,11 @@ import EducationAbout from "../../Components/EducationComponents/EducationAbout"
 import EducationClassSchedule from "../../Components/EducationComponents/EducationClassSchedule";
 import EducationPricing from "../../Components/EducationComponents/EducationPricing";
 import EduationFaqSection from "../../Components/EducationComponents/EduationFaqSection";
+
 function QuranAcademy() {
   return (
     <>
-      <EducationHeroComponent />
+      <EducationHeroComponent imgeUrl="/Programs/QuranAcademy.jpg" />
       <EducationAbout />
       <EducationClassSchedule />
       <EducationPricing />

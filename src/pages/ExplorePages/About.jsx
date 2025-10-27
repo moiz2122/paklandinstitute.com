@@ -1,9 +1,11 @@
-import React from 'react'
-
+import React from "react";
+import Quote from "../../Components/Quote";
 function About() {
   return (
-    <div>About Us</div>
-  )
+    <>
+     <h1>About</h1>
+    </>
+  );
 }
 
-export default About
+export default About;

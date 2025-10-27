@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-zinc-950/95 text-zinc-300">
@@ -11,53 +12,39 @@ const Footer = () => {
               </h3>
               <ul className="space-y-3">
                 <li>
-                  <a
-                    href="#"
+                  <Link
                     className="group leading-none inline-flex items-center transition-colors duration-300 hover:text-teal-600"
+                    to={"/qurangateway"}
                   >
                     Quran Gateway
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/quran-academy"
+                  <Link
                     className="group leading-none inline-flex items-center transition-colors duration-300 hover:text-teal-600"
+                    to={"/quranacademy"}
                   >
                     Quran Academy
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/arabic-literacy"
+                  <Link
                     className="group leading-none inline-flex items-center transition-colors duration-300 hover:text-teal-600"
-                  >
-                    Arabic Literacy
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/arabic-mastery"
-                    className="group leading-none inline-flex items-center transition-colors duration-300 hover:text-teal-600"
+                    to={"/arabicmastery"}
                   >
                     Arabic Mastery
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/islamic-essentials"
+                  <Link
                     className="group leading-none inline-flex items-center transition-colors duration-300 hover:text-teal-600"
+                    to={"/islamicessentials"}
                   >
                     Islamic Essentials
-                  </a>
+                  </Link>
                 </li>
-                <li>
-                  <a
-                    href="/islamic-theology"
-                    className="group leading-none inline-flex items-center transition-colors duration-300 hover:text-teal-600"
-                  >
-                    Islamic Theology
-                  </a>
-                </li>
+                <li></li>
+                <li></li>
               </ul>
             </div>
           </div>
@@ -70,28 +57,28 @@ const Footer = () => {
               </h3>
               <ul className="space-y-3">
                 <li>
-                  <a
-                    href="/family-tafseer"
+                  <Link
                     className="group leading-none inline-flex items-center transition-colors duration-300 hover:text-teal-600"
+                    to={"/familytafseer"}
                   >
                     Family Tafseer
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/spiritual-discourses"
+                  <Link
                     className="group leading-none inline-flex items-center transition-colors duration-300 hover:text-teal-600"
+                    to={"/familydiscourses"}
                   >
-                    Spiritual Discourses
-                  </a>
+                    Family Discourses
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/womens-tafseer"
+                  <Link
                     className="group leading-none inline-flex items-center transition-colors duration-300 hover:text-teal-600"
+                    to={"/womentafseer"}
                   >
                     Women's Tafseer
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -102,28 +89,28 @@ const Footer = () => {
               </h3>
               <ul className="space-y-3">
                 <li>
-                  <a
-                    href="/counseling-center"
+                  <Link
                     className="group leading-none inline-flex items-center transition-colors duration-300 hover:text-teal-600"
+                    to={"/counsellingcenter"}
                   >
-                    Counseling Center
-                  </a>
+                    Counselling Center
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/zakat-aid"
+                  <Link
                     className="group leading-none inline-flex items-center transition-colors duration-300 hover:text-teal-600"
+                    to={"/zakataid"}
                   >
                     Zakat Aid
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/hajj-2025"
+                  <Link
                     className="group leading-none inline-flex items-center transition-colors duration-300 hover:text-teal-600"
+                    to={"/hajj"}
                   >
-                    Hajj 2025
-                  </a>
+                    Hajj
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -136,36 +123,36 @@ const Footer = () => {
             </h3>
             <ul className="space-y-3">
               <li>
-                <a
-                  href="/about"
+                <Link
                   className="group leading-none inline-flex items-center transition-colors duration-300 hover:text-teal-600"
+                  to={"/about"}
                 >
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/faculty"
+                <Link
                   className="group leading-none inline-flex items-center transition-colors duration-300 hover:text-teal-600"
+                  to={"/faculty"}
                 >
                   Faculty
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/reviews"
+                <Link
                   className="group leading-none inline-flex items-center transition-colors duration-300 hover:text-teal-600"
+                  to={"/reviews"}
                 >
                   Reviews
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/contact"
+                <Link
                   className="group leading-none inline-flex items-center transition-colors duration-300 hover:text-teal-600"
+                  to={"/contact"}
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -341,3 +328,19 @@ const Footer = () => {
 };
 
 export default Footer;
+
+{
+  /* <Link
+  className="group leading-none inline-flex items-center transition-colors duration-300 hover:text-teal-600"
+  to={"/qurangateway"}
+>
+  {link.text}
+</Link>;
+
+ <a
+   href="#"
+   className="group leading-none inline-flex items-center transition-colors duration-300 hover:text-teal-600"
+ >
+   Quran Gateway
+ </a>; */
+}
