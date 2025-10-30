@@ -1,9 +1,15 @@
 import React from "react";
-import Quote from "../../Components/Quote";
+import AboutHeroSection from "../../Components/AboutHeroSection";
+import AboutVisionSection from "../../Components/AboutVisionSection";
+import AboutMissionSection from "../../Components/AboutMissionSection";
+import AboutValueSection from "../../Components/AboutValueSection";
 function About() {
   return (
     <>
-     <h1>About</h1>
+      <AboutHeroSection />
+      <AboutVisionSection />
+      <AboutMissionSection />
+      <AboutValueSection />
     </>
   );
 }

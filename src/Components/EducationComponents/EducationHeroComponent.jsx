@@ -1,7 +1,6 @@
 import "animate.css";
 
-
-export default function EducationHeroComponent({ imgeUrl }) {
+export default function EducationHeroComponent({ imgeUrl, ptext ,htextone,htexttwo}) {
   return (
     <section className="h-screen">
       {/* Background Image Container */}
@@ -21,14 +20,12 @@ export default function EducationHeroComponent({ imgeUrl }) {
         <div className="text-left max-w-3xl">
           {/* Heading */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-4 sm:mb-6 text-white tracking-tight leading-tight  transition-all duration-500 animate__animated animate__bounceInDown">
-            QURAN <span className="text-teal-500">GATEWAY</span>
+            {htextone} <span className="text-teal-500">{htexttwo}</span>
           </h1>
 
           {/* Description */}
           <p className="text-lg sm:text-xl md:text-2xl text-zinc-200 mb-8 sm:mb-10 md:mb-12 leading-normal transition-all duration-500 animate__animated animate__bounceInLeft">
-            Embark on a transformative journey through our comprehensive Quran
-            Gateway program. Master Tajweed, perfect your Makhraj, and memorize
-            the last two Juz of the Quran.
+            {ptext}
           </p>
 
           {/* Call-to-Action Buttons */}

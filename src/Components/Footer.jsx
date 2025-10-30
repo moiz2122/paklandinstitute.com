@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
-    <footer className="bg-zinc-950/95 text-zinc-300">
+    <footer className="bg-zinc-950/99 text-zinc-300">
       <div className="max-w-7xl mx-auto px-7 sm:px-8 lg:px-10 2xl:px-0 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Education Section */}
@@ -203,7 +203,7 @@ const Footer = () => {
                 Contact Us
               </h3>
               <a
-                href="mailto:admin@marylandinstitute.org"
+                href="#"
                 className="flex items-center mb-3 group transition-colors duration-300 hover:text-teal-700"
               >
                 <svg
@@ -221,7 +221,7 @@ const Footer = () => {
                   <rect width="20" height="16" x="2" y="4" rx="2"></rect>
                   <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
                 </svg>
-                <span>admin@marylandinstitute.org</span>
+                <span>abdulmoiz.dev.9@gmail.com</span>
               </a>
               <p className="flex items-center mb-3">
                 <svg
@@ -240,7 +240,7 @@ const Footer = () => {
                   <path d="M15 5.764v15"></path>
                   <path d="M9 3.236v15"></path>
                 </svg>
-                <span>Address: To Be Determined</span>
+                <span>Address: i8 Markaz, Islamabad</span>
               </p>
             </div>
           </div>
@@ -250,7 +250,7 @@ const Footer = () => {
         <div className="mt-16 pt-8 border-t border-zinc-800 flex flex-wrap items-center justify-between">
           <div className="flex space-x-6 mb-4 md:mb-0">
             <a
-              href="https://www.facebook.com/marylandinstitute/"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               className="text-zinc-400 hover:text-teal-700 transition-colors duration-300"
@@ -271,7 +271,7 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              href="https://www.instagram.com/marylandinstitute/"
+              href=""
               target="_blank"
               rel="noopener noreferrer"
               className="text-zinc-400 hover:text-teal-700 transition-colors duration-300"
@@ -294,7 +294,7 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              href="https://www.youtube.com/@midonline"
+              href=""
               target="_blank"
               rel="noopener noreferrer"
               className="text-zinc-400 hover:text-teal-700 transition-colors duration-300"

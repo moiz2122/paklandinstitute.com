@@ -8,7 +8,12 @@ import EducationCourseCurriculm from "../../Components/EducationComponents/Educa
 function ArabicMastery() {
   return (
     <>
-      <EducationHeroComponent imgeUrl="/Programs/ArabicMastery.jpg" />
+      <EducationHeroComponent
+        imgeUrl="/Programs/ArabicMastery.jpg"
+        ptext="Embark on a transformative 2-year journey to master the Arabic language and deepen your understanding of Islamic sciences. Our comprehensive program prepares you for Alimiyya."
+        htextone="Arabic"
+        htexttwo="Mastery"
+      />
       <EducationAbout />
       <EducationClassSchedule />
       <EducationPricing />

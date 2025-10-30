@@ -8,7 +8,12 @@ import EduationFaqSection from "../../Components/EducationComponents/EduationFaq
 function QuranGateWay() {
   return (
     <>
-      <EducationHeroComponent imgeUrl="/Programs/QuranGateway.jpg" />
+      <EducationHeroComponent
+        imgeUrl="/Programs/QuranGateway.jpg"
+        ptext="Embark on a transformative journey through our comprehensive Quran Gateway program. Master Tajweed, perfect your Makhraj, and memorize the last two Juz of the Quran."
+        htextone="Quran"
+        htexttwo="Gateway"
+      />
       <EducationAbout />
       <EducationClassSchedule />
       <EducationPricing />
