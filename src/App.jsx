@@ -14,7 +14,7 @@ import ArabicMastery from "./pages/EducationPages/ArabicMastery";
 import About from "./pages/ExplorePages/About";
 import Contact from "./pages/ExplorePages/Contact";
 import Faculty from "./pages/ExplorePages/Faculty";
-import Reviews from "./pages/ExplorePages/Reviews";
+import PageReviews from "./pages/ExplorePages/PageReviews";
 
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/faculty" element={<Faculty />} />
-        <Route path="/reviews" element={<Reviews />} />
+        <Route path="/reviews" element={<PageReviews />} />
 
         {/* Courses Pages Routes */}
         <Route path="/qurangateway" element={<QuranGateWay />} />
