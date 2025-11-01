@@ -1,6 +1,6 @@
 import React from "react";
 import { BookOpen, Heart, Coins, ArrowRight } from "lucide-react";
-
+import { Link } from "react-router-dom";
 const OffersComponent = () => {
   const services = [
     {
@@ -81,13 +81,22 @@ const OffersComponent = () => {
               </p>
 
               {/* Button */}
-              <button
-                onClick={service.buttonAction}
-                className="group inline-flex items-center bg-gradient-to-r from-teal-700 to-teal-800 text-white font-semibold py-3 px-6 md:py-3 md:px-5 rounded-xl text-base md:text-lg transition-all duration-300 hover:shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+              <Link
+                to={
+                  service.title === "Counseling Center" ||
+                  service.title === "Zakat Aid"
+                    ? "pagenotfound"
+                    : "/"
+                }
               >
-                {service.buttonText}
-                <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
-              </button>
+                <button
+                  onClick={service.buttonAction}
+                  className="group inline-flex items-center bg-gradient-to-r from-teal-700 to-teal-800 text-white font-semibold py-3 px-6 md:py-3 md:px-5 rounded-xl text-base md:text-lg transition-all duration-300 hover:shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+                >
+                  {service.buttonText}
+                  <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -102,8 +111,7 @@ const OffersComponent = () => {
           {/* Header Section */}
           <div className="text-center mb-0">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 text-white">
-              What We{" "}
-              <span className="text-teal-500">Offer</span>
+              What We <span className="text-teal-500">Offer</span>
             </h1>
             <p className="text-xl md:text-2xl text-zinc-400 max-w-sm md:max-w-xl mx-auto">
               Discover our range of services designed to support and enrich our
