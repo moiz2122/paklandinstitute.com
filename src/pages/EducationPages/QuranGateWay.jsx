@@ -11,8 +11,8 @@ function QuranGateWay() {
       <EducationHeroComponent
         imgeUrl="/Programs/QuranGateway.jpg"
         ptext="Embark on a transformative journey through our comprehensive Quran Gateway program. Master Tajweed, perfect your Makhraj, and memorize the last two Juz of the Quran."
-        htextone="Quran"
-        htexttwo="Gateway"
+        htextone="QURAN"
+        htexttwo="GATEWAY"
       />
       <EducationAbout />
       <EducationClassSchedule />

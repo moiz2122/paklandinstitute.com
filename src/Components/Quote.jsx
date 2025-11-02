@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Quote() {
   return (
@@ -25,12 +26,12 @@ function Quote() {
           </cite>
 
           <div>
-            <a
+            <Link
               className="inline-block border-4 border-teal-600 text-zinc-200 font-bold text-lg md:text-xl px-10 py-4 rounded-full transition-all duration-300 hover:bg-teal-600 hover:shadow-lg"
-              href="/donation"
+              to="/donation"
             >
               GIVE TODAY
-            </a>
+            </Link>
           </div>
         </div>
       </div>

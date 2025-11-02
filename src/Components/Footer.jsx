@@ -202,8 +202,8 @@ const Footer = () => {
               <h3 className="text-2xl font-bold text-white mb-6 pb-2 border-b-2 border-teal-700 inline-block">
                 Contact Us
               </h3>
-              <a
-                href="#"
+              <Link
+                to="/"
                 className="flex items-center mb-3 group transition-colors duration-300 hover:text-teal-700"
               >
                 <svg
@@ -222,7 +222,7 @@ const Footer = () => {
                   <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
                 </svg>
                 <span>abdulmoiz.dev.9@gmail.com</span>
-              </a>
+              </Link>
               <p className="flex items-center mb-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -249,8 +249,8 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="mt-16 pt-8 border-t border-zinc-800 flex flex-wrap items-center justify-between">
           <div className="flex space-x-6 mb-4 md:mb-0">
-            <a
-              href="#"
+            <Link
+              to="/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-zinc-400 hover:text-teal-700 transition-colors duration-300"
@@ -269,9 +269,9 @@ const Footer = () => {
               >
                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
               </svg>
-            </a>
-            <a
-              href=""
+            </Link>
+            <Link
+              to="/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-zinc-400 hover:text-teal-700 transition-colors duration-300"
@@ -292,9 +292,9 @@ const Footer = () => {
                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                 <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
               </svg>
-            </a>
-            <a
-              href=""
+            </Link>
+            <Link
+              to="/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-zinc-400 hover:text-teal-700 transition-colors duration-300"
@@ -314,7 +314,7 @@ const Footer = () => {
                 <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path>
                 <path d="m10 15 5-3-5-3z"></path>
               </svg>
-            </a>
+            </Link>
           </div>
           <div className="text-sm text-zinc-400 font-medium">
             <p>

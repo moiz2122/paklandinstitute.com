@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import "animate.css";
 
 const MultiHeroCarousel = () => {
@@ -172,18 +173,20 @@ const MultiHeroCarousel = () => {
             className="flex flex-col sm:flex-row gap-3 sm:gap-4 animate__animated animate__bounceInUp"
             style={{ animationDelay: "0.4s" }}
           >
-            <button
-              className={`group relative inline-flex items-center justify-center w-full sm:w-auto px-8 py-3 sm:py-4 rounded-2xl text-lg font-medium transition-all duration-300 overflow-hidden hover:cursor-pointer ${
-                currentHero.id === 2
-                  ? `bg-yellow-400 hover:bg-yellow-500 text-black`
-                  : `bg-teal-600 hover:bg-teal-700 border-2 border-teal-600 text-white`
-              }`}
-            >
-              <span className="relative z-10 flex items-center">
-                {currentHero.primaryButton.text}
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </span>
-            </button>
+            <Link to={currentHero.primaryButton.link}>
+              <button
+                className={`group relative inline-flex items-center justify-center w-full sm:w-auto px-8 py-3 sm:py-4 rounded-2xl text-lg font-medium transition-all duration-300 overflow-hidden hover:cursor-pointer ${
+                  currentHero.id === 2
+                    ? `bg-yellow-400 hover:bg-yellow-500 text-black`
+                    : `bg-teal-600 hover:bg-teal-700 border-2 border-teal-600 text-white`
+                }`}
+              >
+                <span className="relative z-10 flex items-center">
+                  {currentHero.primaryButton.text}
+                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </span>
+              </button>
+            </Link>
 
             <button className="bg-black/40 border-2 border-white/20 text-white font-semibold py-3 px-8 sm:py-4 rounded-2xl shadow-lg transition duration-300 ease-in-out transform hover:bg-black/10 text-lg">
               {currentHero.secondaryButton.text}

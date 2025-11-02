@@ -11,8 +11,8 @@ function QuranAcademy() {
       <EducationHeroComponent
         imgeUrl="/Programs/QuranAcademy.jpg"
         ptext="Embark on a transformative journey to memorize the entire Quran. Our comprehensive 3-year program is designed for dedicated students who have completed Noorani Qaidah and basic Tajweed."
-        htextone="Quran"
-        htexttwo="Academy"
+        htextone="QURAN"
+        htexttwo="ACADEMY"
       />
       <EducationAbout />
       <EducationClassSchedule />

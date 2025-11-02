@@ -11,8 +11,8 @@ function ArabicMastery() {
       <EducationHeroComponent
         imgeUrl="/Programs/ArabicMastery.jpg"
         ptext="Embark on a transformative 2-year journey to master the Arabic language and deepen your understanding of Islamic sciences. Our comprehensive program prepares you for Alimiyya."
-        htextone="Arabic"
-        htexttwo="Mastery"
+        htextone="ARABIC"
+        htexttwo="MASTERY"
       />
       <EducationAbout />
       <EducationClassSchedule />

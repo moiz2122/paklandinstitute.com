@@ -11,8 +11,8 @@ function IslamicEssentials() {
       <EducationHeroComponent
         imgeUrl="/Programs/IslamicEssentials.jpg"
         ptext="Embark on a transformative journey through our comprehensive 2-year program, designed in English, to deepen your understanding of important topics in Islam and enrich your spiritual life."
-        htextone="Islamic"
-        htexttwo="Essentials"
+        htextone="ISLAMIC"
+        htexttwo=" ESSENTIALS"
       />
       <EducationAbout />
       <EducationClassSchedule />
