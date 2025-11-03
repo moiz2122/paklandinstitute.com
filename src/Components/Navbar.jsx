@@ -36,7 +36,6 @@ const Navbar = () => {
     { to: "/quranacademy", text: "Quran Academy" },
     { to: "/islamicessentials", text: "Islamic Essentials" },
     { to: "/arabicmastery", text: "Arabic Mastery" },
-
   ];
 
   const communityLinks = [
@@ -194,10 +193,13 @@ const Navbar = () => {
             >
               DONATE
             </Link>
-            <button className="group flex items-center bg-white text-teal-700 text-sm px-6 py-2 rounded-xl transition duration-300 font-bold transform focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 shadow-lg hover:shadow-xl">
+            <Link
+              to="/pagenotfound"
+              className="group flex items-center bg-white text-teal-700 text-sm px-6 py-2 rounded-xl transition duration-300 font-bold transform focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 shadow-lg hover:shadow-xl"
+            >
               LOGIN
               <LogIn className="inline-block h-4 w-4 ml-1 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
