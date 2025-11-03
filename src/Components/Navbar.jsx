@@ -128,7 +128,7 @@ const Navbar = () => {
             <Link
               key={index}
               className="flex items-center py-2 px-8 hover:bg-teal-600 rounded-xl transition duration-300"
-              to={link.href}
+              to={link.to}
             >
               <span>{link.text}</span>
             </Link>
