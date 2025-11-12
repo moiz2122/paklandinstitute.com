@@ -25,10 +25,10 @@ const Navbar = () => {
 
   const handleMouseLeave = () => {
     // Add a small delay to prevent dropdown from closing when moving cursor to dropdown menu
-    const timeout = setTimeout(() => {
-      setActiveDropdown(null);
-    }, 30);
-    setHoverTimeout(timeout);
+    // const timeout = setTimeout(() => {
+    //   setActiveDropdown(null);
+    // }, 30);
+    // setHoverTimeout(timeout);
   };
 
   const educationLinks = [
@@ -83,10 +83,8 @@ const Navbar = () => {
 
       {/* Dropdown transition fix */}
       <div
-        className={`absolute left-0 mt-2 w-56 bg-zinc-900 rounded-2xl shadow-lg p-2 transform transition-all duration-300 ease-in-out ${
-          isOpen
-            ? "opacity-100 visible translate-y-0"
-            : "opacity-0 invisible -translate-y-2"
+        className={`absolute left-0 mt-2 w-56 bg-zinc-900 rounded-2xl shadow-lg p-2 transition-all duration-300 ease-in-out ${
+          isOpen ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
         {links.map((link, index) => (
