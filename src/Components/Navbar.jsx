@@ -15,7 +15,6 @@ const Navbar = () => {
   };
 
   const handleMouseEnter = (dropdown) => {
-    // Clear any existing timeout
     if (hoverTimeout) {
       clearTimeout(hoverTimeout);
       setHoverTimeout(null);
@@ -24,12 +23,13 @@ const Navbar = () => {
   };
 
   const handleMouseLeave = () => {
-    // Add a small delay to prevent dropdown from closing when moving cursor to dropdown menu
-    // const timeout = setTimeout(() => {
-    //   setActiveDropdown(null);
-    // }, 30);
-    // setHoverTimeout(timeout);
+    const timeout = setTimeout(() => {
+      setActiveDropdown(null);
+    }, 150);
+    setHoverTimeout(timeout);
   };
+
+  console.log(handleMouseLeave);
 
   const educationLinks = [
     { to: "/qurangateway", text: "Quran Gateway" },
@@ -59,12 +59,12 @@ const Navbar = () => {
 
   const DropdownMenu = ({ title, links, isOpen, dropdownKey }) => (
     <div
-      className="relative group"
+      className="relative group cursor-pointer"
       onMouseEnter={() => handleMouseEnter(dropdownKey)}
       onMouseLeave={handleMouseLeave}
     >
       <button
-        className="flex items-center rounded-xl space-x-1 py-2 px-3 transition duration-300 hover:bg-zinc-900 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-opacity-50"
+        className="flex cursor-pointer items-center rounded-xl space-x-1 py-2 px-3 transition duration-300 hover:bg-zinc-900 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-opacity-50"
         aria-expanded={isOpen}
         aria-haspopup="true"
       >
@@ -86,6 +86,8 @@ const Navbar = () => {
         className={`absolute left-0 mt-2 w-56 bg-zinc-900 rounded-2xl shadow-lg p-2 transition-all duration-300 ease-in-out ${
           isOpen ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
+        onMouseEnter={() => handleMouseEnter(dropdownKey)}
+        onMouseLeave={handleMouseLeave}
       >
         {links.map((link, index) => (
           <Link

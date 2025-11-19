@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import "./App.css";
 import Footer from "./Components/Footer";
+import ScrolToTop from "./Components/ScrollToTop";
 
 import Home from "./pages/ExplorePages/Home";
 import NotFound from "./pages/ExplorePages/PageNotFound";
@@ -19,6 +20,7 @@ import PageReviews from "./pages/ExplorePages/PageReviews";
 function App() {
   return (
     <div>
+      <ScrolToTop />
       <Navbar />
 
       <Routes>
