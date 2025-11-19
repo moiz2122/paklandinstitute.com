@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar";
 import "./App.css";
 import Footer from "./Components/Footer";
 import ScrolToTop from "./Components/ScrollToTop";
+import ComingSoon from "./pages/ExplorePages/ComingSoon";
 
 import Home from "./pages/ExplorePages/Home";
 import NotFound from "./pages/ExplorePages/PageNotFound";
@@ -34,10 +35,22 @@ function App() {
         {/* Courses Pages Routes */}
         <Route path="/qurangateway" element={<QuranGateWay />} />
         <Route path="/quranacademy" element={<QuranAcademy />} />
-        <Route path="/islamicessentials" element={<IslamicEssenrials />} />
-        <Route path="/arabicliteracy" element={<Home />} />
-        <Route path="/islamictheology" element={<Home />} />
-        <Route path="/arabicmastery" element={<ArabicMastery />} />
+        <Route
+          path="/islamicessentials"
+          element={<ComingSoon programName="Islamic Essentials" />}
+        />
+        <Route
+          path="/arabicliteracy"
+          element={<ComingSoon programName="Arabic Literacy" />}
+        />
+        <Route
+          path="/islamictheology"
+          element={<ComingSoon programName="Islamic Theology" />}
+        />
+        <Route
+          path="/arabicmastery"
+          element={<ComingSoon programName="Arabic Mastery" />}
+        />
 
         <Route path="*" element={<NotFound />} />
       </Routes>

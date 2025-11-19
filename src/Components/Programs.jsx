@@ -152,43 +152,42 @@ function Programs() {
 
             {/* Arabic Literacy */}
 
-            {/* <div className="bg-zinc-900 border border-zinc-800 rounded-3xl shadow-lg shadow-black/60 overflow-hidden flex flex-col">
-                <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
-                  <img
-                    alt="ARABIC LITERACY"
-                    src="/Programs/ArabicLiteracy.jpg"
-                    className="absolute inset-0 w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
-                  <div className="absolute bottom-0 left-0 right-0 p-4 flex justify-between items-end">
-                    <div className="flex items-center text-white">
-                      <Clock className="w-4 h-4 mr-2" />
-                      <span className="text-sm">3 months</span>
-                    </div>
-                    <div className="flex items-center text-white">
-                      <Calendar className="w-4 h-4 mr-2" />
-                      <span className="text-sm">Sundays & Weekdays</span>
-                    </div>
+            <div className="bg-zinc-900 border border-zinc-800 rounded-3xl shadow-lg shadow-black/60 overflow-hidden flex flex-col">
+              <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
+                <img
+                  alt="ARABIC LITERACY"
+                  src="/Programs/ArabicLiteracy.jpg"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-4 flex justify-between items-end">
+                  <div className="flex items-center text-white">
+                    <Clock className="w-4 h-4 mr-2" />
+                    <span className="text-sm">3 months</span>
+                  </div>
+                  <div className="flex items-center text-white">
+                    <Calendar className="w-4 h-4 mr-2" />
+                    <span className="text-sm">Sundays & Weekdays</span>
                   </div>
                 </div>
-                <div className="p-6 flex flex-col flex-grow">
-                  <h3 className="text-xl sm:text-2xl font-bold text-zinc-100 mb-3">
-                    ARABIC LITERACY
-                  </h3>
-                  <p className="text-zinc-400 mb-4 flex-grow">
-                    A concise 3-month program that encompasses the fundamentals
-                    of Arabic. Classes are conducted on Sundays and weekday
-                    evenings.
-                  </p>
-                  <Link
-                    className="group inline-flex items-center justify-center w-full rounded-xl bg-teal-800 px-6 py-3 text-base font-medium text-white"
-                    to="/arabicliteracy"
-                  >
-                    Learn More
-                    <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
-                  </Link>
-                </div>
-              </div> */}
+              </div>
+              <div className="p-6 flex flex-col flex-grow">
+                <h3 className="text-xl sm:text-2xl font-bold text-zinc-100 mb-3">
+                  ARABIC LITERACY
+                </h3>
+                <p className="text-zinc-400 mb-4 flex-grow">
+                  A concise 3-month program that encompasses the fundamentals of
+                  Arabic. Classes are conducted on Sundays and weekday evenings.
+                </p>
+                <Link
+                  className="group inline-flex items-center justify-center w-full rounded-xl bg-teal-800 px-6 py-3 text-base font-medium text-white"
+                  to="/arabicliteracy"
+                >
+                  Learn More
+                  <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
+                </Link>
+              </div>
+            </div>
 
             {/* Arabic Mastery */}
             <div className="bg-zinc-900 border border-zinc-800 rounded-3xl shadow-lg shadow-black/60 overflow-hidden flex flex-col">
@@ -258,6 +257,45 @@ function Programs() {
                   A comprehensive 2-year program that explores the fundamentals
                   of Islam, with classes held on both Sundays and weekday
                   evenings.
+                </p>
+                <Link
+                  className="group inline-flex items-center justify-center w-full rounded-xl bg-teal-800 px-6 py-3 text-base font-medium text-white"
+                  to="/islamicessentials"
+                >
+                  Learn More
+                  <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
+                </Link>
+              </div>
+            </div>
+
+            {/* Islamic Theology  */}
+            <div className="bg-zinc-900 border border-zinc-800 rounded-3xl shadow-lg shadow-black/60 overflow-hidden flex flex-col ">
+              <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
+                <img
+                  alt="Islamic Theology"
+                  src="/Programs/IslamicEssentials.jpg"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-4 flex justify-between items-end">
+                  <div className="flex items-center text-white">
+                    <Clock className="w-4 h-4 mr-2" />
+                    <span className="text-sm">8 years</span>
+                  </div>
+                  <div className="flex items-center text-white">
+                    <Calendar className="w-4 h-4 mr-2" />
+                    <span className="text-sm">Sundays & Weekdays</span>
+                  </div>
+                </div>
+              </div>
+              <div className="p-6 flex flex-col flex-grow">
+                <h3 className="text-xl sm:text-2xl font-bold text-zinc-100 mb-3">
+                  ISLAMIC THEOLOGY
+                </h3>
+                <p className="text-zinc-400 mb-4 flex-grow">
+                  A traditional Alim curriculum equivalent to a Masters in
+                  Islamic Theology, with classes held on both Sundays and
+                  weekday evenings.
                 </p>
                 <Link
                   className="group inline-flex items-center justify-center w-full rounded-xl bg-teal-800 px-6 py-3 text-base font-medium text-white"
